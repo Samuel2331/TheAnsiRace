@@ -1,0 +1,12 @@
+#~/bin/bash
+
+expecting="blanks: 8 tabs: 4 newlines: 4"
+input=$(cat filecopy.c.test | ./a.out)
+
+echo -e "\n=== ex-1.8.c ===" 1>&2
+echo -e "Expecting: $expecting" 1>&2
+echo -e "Generated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $input == $expecting* ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch

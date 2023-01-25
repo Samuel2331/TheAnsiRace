@@ -1,0 +1,16 @@
+#~/bin/bash
+
+expecting='esta camisa es negra!
+tab1\ttab2\ttab3
+%%%%%% porcentajes %%%
+diag 1 \\ diag2 \\\\ diag3 \\\\\\ 
+blanks: 8\ttabs: 4\tnewlines: 4'
+input=$(cat ex-1.10.c.test | ./a.out)
+
+echo -e "\n=== ex-1.10.c ===" 1>&2
+echo "Expecting: $expecting" 1>&2
+echo "Generated: $input" 1>&2
+
+shopt -s nocasematch
+[[ "$expecting" == "$input" ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch

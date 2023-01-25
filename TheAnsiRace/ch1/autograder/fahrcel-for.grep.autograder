@@ -1,0 +1,15 @@
+#~/bin/bash
+
+points=0
+
+echo -e "\n=== fahrcel-for.c ===" 1>&2
+
+result=`grep -c 'for' fahrcel-for.c`
+echo $result
+
+#points=$(($points + 5))
+#echo "$points"
+
+if [ $result -eq 1 ]; then
+	echo "points +10"
+fi

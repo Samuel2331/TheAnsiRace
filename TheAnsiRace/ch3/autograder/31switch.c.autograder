@@ -1,0 +1,12 @@
+#~/bin/bash
+
+expecting="digits = 0 1 1 1 2 0 0 0 1 0, white space = 16, other = 68"
+input=$(cat 31switch.c.test | ./a.out)
+
+echo -e "\n=== Switch.c ===" 1>&2
+echo -e "\nExpecting: $expecting" 1>&2
+echo -e "\nGenerated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $expecting == $input ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch

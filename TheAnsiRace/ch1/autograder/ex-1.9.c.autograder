@@ -1,0 +1,14 @@
+#~/bin/bash
+
+expecting="testing ex-1.9
+1 2 3 4 5 6 7 8 9
+the number says the amount of spaces it has."
+input=$(cat ex-1.9.c.test | ./a.out)
+
+echo -e "=== ex-1.9.c ===" 1>&2
+echo -e "Expecting: $expecting" 1>&2
+echo -e "\nGenerated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $input == $expecting* ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch

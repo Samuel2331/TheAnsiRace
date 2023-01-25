@@ -1,0 +1,16 @@
+#~/bin/bash
+
+input=$(./a.out)
+expecting="40
+3474212
+7354:13
+1111
+101111010"
+
+echo -e "\n=== Ex-3.5.c ===" 1>&2
+echo -e "\nExpecting: $expecting" 1>&2
+echo -e "\nGenerated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $expecting == $input ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch

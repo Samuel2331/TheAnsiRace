@@ -1,0 +1,12 @@
+#~/bin/bash
+
+input=$(./a.out)
+expecting="hello, world"
+
+echo "=== hello.c ===" 1>&2
+echo "Expecting: $expecting" 1>&2
+echo "Generated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $expecting == $input ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch

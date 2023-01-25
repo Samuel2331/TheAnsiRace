@@ -1,0 +1,17 @@
+#~/bin/bash
+
+expecting="tab is considered to be eight spaces
+12345678901234567890
+four    spaces
+one     tab
+two             tabs
+        tab at beggining of line"
+input=$(cat ex-1.20.c.test | ./a.out)
+
+echo -e "\n=== filecopy.c ===" 1>&2
+echo -e "\nExpecting: $expecting" 1>&2
+echo -e "\nGenerated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $expecting == $input ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch

@@ -1,0 +1,22 @@
+Problemas a Evaluar
+
+ 1. hello.c
+    fahrcel.c
+    celfahr.c
+    fahrcel-for.c
+ 5. filecopy.c
+    ex-1.8.c
+    ex-1.9.c
+    ex-10.c
+    wordcount.c
+10. ex-1.12.c
+    countdigits.c
+    ex-1.13.c
+    ex-1.14.c
+    power.c
+15. ex-1.15.c
+    longestline.c
+    ex-1.17.c
+    ex-1.18.c
+    ex-1.19.c
+20. ex-1.20.c

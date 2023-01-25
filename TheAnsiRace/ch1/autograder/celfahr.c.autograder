@@ -1,0 +1,27 @@
+#~/bin/bash
+
+input=$(./a.out)
+expecting="fahr	celsius
+ 32	   0.0
+ 68	  20.0
+104	  40.0
+140	  60.0
+176	  80.0
+212	 100.0
+248	 120.0
+284	 140.0
+320	 160.0
+356	 180.0
+392	 200.0
+428	 220.0
+464	 240.0
+500	 260.0
+536	 280.0"
+
+echo -e "\n=== celfahr.c ===" 1>&2
+echo -e "\nExpecting: $expecting" 1>&2
+echo -e "\nGenerated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $expecting == $input ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch

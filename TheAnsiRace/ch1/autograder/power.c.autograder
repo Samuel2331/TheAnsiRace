@@ -1,0 +1,21 @@
+#~/bin/bash
+
+input=$(./a.out)
+expecting="0 1 1
+1 2 -3
+2 4 9
+3 8 -27
+4 16 81
+5 32 -243
+6 64 729
+7 128 -2187
+8 256 6561
+9 512 -19683"
+
+echo "=== power.c ===" 1>&2
+echo "Expecting: $expecting" 1>&2
+echo "Generated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $expecting == $input ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch

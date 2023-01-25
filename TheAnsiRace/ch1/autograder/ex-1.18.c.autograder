@@ -1,0 +1,17 @@
+#~/bin/bash
+
+expecting="thislinehasspaces
+thislinehastabs
+nospacesnortabsinthisline
+onelineempty
+twolinesempty
+theend"
+input=$(cat ex-1.18.c.test | ./a.out)
+
+echo -e "\n=== ex-1.17.c ===" 1>&2
+echo -e "\nExpecting: $expecting" 1>&2
+echo -e "\nGenerated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $expecting == $input ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch

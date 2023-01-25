@@ -1,0 +1,66 @@
+Ansi C Autograder: Chapter01
+Script created by the CC3 Team - Galileo University
+
+these are the programs I will be evaluating: 
+hello.c fahrcel.c celfahr.c fahrcel-for.c filecopy.c ex-1.8.c ex-1.9.c ex-1.10.c wordcount.c ex-1.12.c countdigits.c ex-1.13.c ex-1.14.c power.c ex-1.15.c longestline.c ex-1.17.c ex-1.18.c ex-1.19.c ex-1.20.c 
+
+hello.c exists, checking...
+points: +10
+
+fahrcel.c exists, checking...
+points: +10
+
+celfahr.c exists, checking...
+points: +10
+
+fahrcel-for.c exists, checking...
+points: +10
+
+filecopy.c exists, checking...
+points: +10
+
+ex-1.8.c exists, checking...
+points: +10
+
+ex-1.9.c exists, checking...
+points: +10
+
+ex-1.10.c not found, skipping...
+points:   0
+
+wordcount.c not found, skipping...
+points:   0
+
+ex-1.12.c not found, skipping...
+points:   0
+
+countdigits.c not found, skipping...
+points:   0
+
+ex-1.13.c not found, skipping...
+points:   0
+
+ex-1.14.c not found, skipping...
+points:   0
+
+power.c not found, skipping...
+points:   0
+
+ex-1.15.c not found, skipping...
+points:   0
+
+longestline.c not found, skipping...
+points:   0
+
+ex-1.17.c not found, skipping...
+points:   0
+
+ex-1.18.c not found, skipping...
+points:   0
+
+ex-1.19.c not found, skipping...
+points:   0
+
+ex-1.20.c not found, skipping...
+points:   0
+

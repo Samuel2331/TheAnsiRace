@@ -1,0 +1,14 @@
+#~/bin/bash
+
+expecting="la ultima posicion de a esta en: 6"
+input=$(./a.out)
+
+echo -e "\n=== Ex-4.1.c ===" 1>&2
+echo -e "\nExpecting: $expecting" 1>&2
+echo -e "\nGenerated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $expecting == $input ]] && echo "points: +10
+" || echo "points:  0
+"
+shopt -u nocasematch

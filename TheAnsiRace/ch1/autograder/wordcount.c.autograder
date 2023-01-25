@@ -1,0 +1,12 @@
+#~/bin/bash
+
+expecting="newlines: 4, words: 16, chars: 90"
+input=$(cat filecopy.c.test | ./a.out)
+
+echo -e "=== wordcount.c ===" 1>&2
+echo -e "Expecting: $expecting" 1>&2
+echo -e "Generated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $input == $expecting* ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch

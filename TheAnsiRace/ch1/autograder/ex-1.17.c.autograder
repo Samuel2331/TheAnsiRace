@@ -1,0 +1,13 @@
+#~/bin/bash
+
+expecting="This line is more than eighty characters long, in order to test the exercise 1.17.
+And this, the last line, will also be eighty characters long and appear in the output of the autograder."
+input=$(cat ex-1.17.c.test | ./a.out)
+
+echo -e "\n=== ex-1.17.c ===" 1>&2
+echo -e "\nExpecting: $expecting" 1>&2
+echo -e "\nGenerated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $expecting == $input ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch

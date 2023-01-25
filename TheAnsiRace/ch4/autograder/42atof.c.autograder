@@ -1,0 +1,12 @@
+#~/bin/bash
+
+input=$(./a.out)
+expecting="26.00 = 26.00"
+
+echo -e "\n=== Atof.c ===" 1>&2
+echo -e "\nExpecting: $expecting" 1>&2
+echo -e "\nGenerated: $input" 1>&2
+
+shopt -s nocasematch
+[[ $expecting == $input ]] && echo "points: +10\n" || echo "points:  0\n"
+shopt -u nocasematch
