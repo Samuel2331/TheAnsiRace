@@ -21,4 +21,6 @@ main(){
 
 	} 
 	printf("blanks: %d tabs: %d newlines: %d\n ", nb, nt, nl);
+
+	return 0;
 }

@@ -14,6 +14,8 @@ main(){
             reverse(line ,len);
             printf("%s",line);
     }
+
+    return 0;
 }
 
 int getlino(char s[], int lim){

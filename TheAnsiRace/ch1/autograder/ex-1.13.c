@@ -41,4 +41,6 @@ main(){
 		for (j=0; j<nCharsPerWord[i]; ++j) printf("*");
 		printf("\n");
 	}
+
+	return 0;
 }

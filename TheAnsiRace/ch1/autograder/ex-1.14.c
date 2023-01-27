@@ -39,4 +39,6 @@ main(){
 		for (j=0; j<nAlphanumeric[i]; ++j) printf("*");
 		printf("\n");
 	}
+
+	return 0;
 }

@@ -27,6 +27,8 @@ main(){
     if(max > 0){
         printf("%s", longest);
     }
+
+    return 0;
 }
 
 int getlino(char s[], int lim){

@@ -24,5 +24,7 @@ main(){
 	}
 
 	printf("newlines: %d, words: %d, chars: %d\n", nl, nw, nc);
+
+	return 0;
 }
 

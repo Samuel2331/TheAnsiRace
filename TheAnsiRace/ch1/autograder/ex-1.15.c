@@ -14,6 +14,8 @@ main(){
 		printf("%3.0f\t%6.1f\n", fahr, fahrcel(fahr)/* call fahrcel() passing it an argument */);
 		fahr = fahr + step;
 	}
+
+	return 0;
 }
 
 float fahrcel(float fare){

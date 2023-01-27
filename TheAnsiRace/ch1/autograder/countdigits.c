@@ -24,4 +24,6 @@ main(){
 	printf("digits =");
 	for (i=0; i < 10; ++i) printf(" %d", ndigit[i]);
 	printf(", white space = %d, other = %d\n", nwhite, nother);
+
+	return 0;
 }

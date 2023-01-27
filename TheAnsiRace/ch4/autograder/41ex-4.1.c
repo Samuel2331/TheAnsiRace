@@ -6,6 +6,16 @@ occurrence of t in s, or -1 if there is none. */
 
 int strindex(char str[], char c){
 	// implementar aqui
+	int i, j, k, right;
+
+	right = -1;
+
+	for(i = 0; str[i] != '\0'; i++){
+		if(str[i] == c)
+			right = i;
+	}
+
+	return right;
 }
 
 int main(){

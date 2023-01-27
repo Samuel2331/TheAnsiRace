@@ -18,6 +18,8 @@ main(){
         }
         char line[MAXLINE];
     }
+
+    return 0;
 }
 
 int getlino(char s[], int max){

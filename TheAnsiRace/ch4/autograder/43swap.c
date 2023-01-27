@@ -7,7 +7,10 @@
 /* swap: interchange v[i] and v[j] */
 void swap(int v[], int i, int j){
 	// aqui va su programa
-	
+	int c;
+	c = v[i];
+	v[i] = v[j];
+	v[j] = c;
 }
 
 // ya saben, no modificar lo de abajo 

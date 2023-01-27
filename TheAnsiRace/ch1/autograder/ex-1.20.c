@@ -18,6 +18,8 @@ main(){
         char notab[MAX];
     }
 
+    return 0;
+
 }
 
 int getlino(char s[]){

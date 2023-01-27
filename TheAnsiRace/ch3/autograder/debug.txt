@@ -1,0 +1,18 @@
+Ansi C Autograder: Chapter01
+Script created by the CC3 Team - Galileo University
+
+these are the programs I will be evaluating: 
+31switch.c 33ex-3.3.c 34itoa.c 35ex-3.5.c 
+
+31switch.c exists, checking...
+points: +10
+
+33ex-3.3.c exists, checking...
+points: +10
+
+34itoa.c exists, checking...
+points: +10
+
+35ex-3.5.c exists, checking...
+points: +10
+

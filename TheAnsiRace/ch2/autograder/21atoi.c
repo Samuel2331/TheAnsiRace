@@ -5,8 +5,16 @@
 #define FIN }
 /* atoi: convert s to integer */
 
-int miatoi() { // recibe un char []
+int miatoi(char s[]) { // recibe un char []
  	//escribir aqui su programa...
+	int i, n;
+
+	n = 0;
+
+	for(i = 0; s[i] >= '0' && s[i] <= '9'; i++){
+		n = 10 * n + (s[i] - '0');
+	}
+	return n;
 }
 
 

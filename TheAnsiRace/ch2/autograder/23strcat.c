@@ -8,9 +8,17 @@
 /* strcat: concatenate t to end of s; s must be big enough */
 void mistrcat(char s[], char t[]) {
 	//escribir el programa
+	int i, j;
+
+	i = '0';
+	j = '0';
+	while(s[i] != '\0')
+		i++;
+
+	while((s[i++] = t[j++]) != '\0')
+		;
 }
 
 // no modificar el main
-ING ALI LEMUS
-ENTONCES YaMeConfundi
+ING ALI LEMUS ENTONCES YaMeConfundi
 // al terminar correr el programa

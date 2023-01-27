@@ -14,4 +14,6 @@ main(){
             putchar(c);
         }
     }
+
+    return 0;
 }
